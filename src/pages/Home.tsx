@@ -1,4 +1,5 @@
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -15,9 +16,9 @@ export default function Home() {
                 Matrix Direct- Steering brands towards impactful visibility and robust engagement.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="#about" className="px-8 py-4 bg-matrix-blue text-white font-bold rounded-lg hover:bg-matrix-accent transition-all flex items-center gap-2">
-                  Learn More <ArrowRight size={20} />
-                </a>
+                <Link to="/contact" className="px-8 py-4 bg-matrix-blue text-white font-bold rounded-lg hover:bg-matrix-accent transition-all flex items-center gap-2">
+                  Contact Us <ArrowRight size={20} />
+                </Link>
               </div>
             </div>
             <div className="w-full rounded-2xl overflow-hidden shadow-2xl bg-matrix-blue flex items-center justify-center p-4">
